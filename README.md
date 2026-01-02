@@ -10,3 +10,5 @@ wget https://raw.githubusercontent.com/LinnBenson/LinuxShell/main/cmd.sh && chmo
 ```
 wget https://raw.githubusercontent.com/LinnBenson/LinuxShell/main/cmd.sh && chmod +x cmd.sh
 ```
+
+如果您已经下载完成，则可以通过 `./cmd.sh` 直接运行。
