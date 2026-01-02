@@ -48,7 +48,7 @@ case "$choice" in
       1) screen -r "$sess";;
       2)
         screen -X -S "$sess" quit
-        echo -e "\033[32m会话 ${sess} 已关闭！\033[0m"
+        echo -e "\033[42m[Success] 会话 ${sess} 已关闭！\033[0m"
         ;;
       *) echo -e "\033[41m[Error] 此操作不存在！\033[0m";;
     esac
