@@ -1,7 +1,12 @@
 # LinuxShell
 Linux 服务器快捷管理命令
 
-#### 打开主菜单
+#### 下载并直接运行
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/LinnBenson/LinuxShell/main/main.sh)
+wget https://raw.githubusercontent.com/LinnBenson/LinuxShell/main/cmd.sh && chmod +x cmd.sh && ./cmd.sh
+```
+
+#### 仅下载脚本
+```
+wget https://raw.githubusercontent.com/LinnBenson/LinuxShell/main/cmd.sh && chmod +x cmd.sh
 ```
