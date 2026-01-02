@@ -6,6 +6,7 @@ echo "1. 打开新会话"
 echo ""
 
 read -p "请选择需要执行的功能: " choice
+echo ""
 case "$choice" in
     1) wget -qO- https://shell.todu.io/screen.sh | bash;;
     *) echo -e "\033[41m[Error] 当前选择不存在！\033[0m";;
