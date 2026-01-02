@@ -3,7 +3,7 @@
 echo -e "\033[1m\033[34mScreen 会话管理\033[0m"
 echo "==============="
 echo "1. 打开新会话"
-echo "\033[36m=> 运行中的会话"
+echo -e "\033[36m=> 运行中的会话"
 list=$(screen -ls | grep -o '[0-9]\+\.[^[:space:]]\+')
 if [ -n "$list" ]; then
     i=1
