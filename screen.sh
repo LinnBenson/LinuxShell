@@ -38,7 +38,7 @@ case "$choice" in
     fi
     # 会话子菜单
     echo ""
-    echo -e "\033[1;34m会话：${sess}\033[0m"
+    echo -e "\033[1;34m${sess}\033[0m"
     echo "==============="
     echo "1. 恢复会话"
     echo "2. 关闭会话"
