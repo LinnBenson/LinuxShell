@@ -39,14 +39,16 @@ case "$choice" in
     # 会话子菜单
     echo ""
     echo -e "\033[1;34m${sess}\033[0m"
-    echo "==============="
-    echo "1. 恢复会话"
-    echo "2. 关闭会话"
+    echo "===============
+    echo "1. 查看会话信息"
+    echo "2. 恢复此会话"
+    echo "3. 关闭此会话"
     echo ""
     read -p "请选择操作: " act
     case "$act" in
-      1) screen -r "$sess";;
-      2)
+      1) screen -ls | grep "$sess";;
+      2) screen -r "$sess";;
+      3)
         screen -X -S "$sess" quit
         echo -e "\033[42m[Success] 会话 ${sess} 已关闭！\033[0m"
         ;;
