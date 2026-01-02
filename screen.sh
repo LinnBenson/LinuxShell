@@ -16,7 +16,6 @@ else
     echo "当前未启动 screen 会话"
 fi
 echo ""
-
 read -p "请选择需要执行的功能: " choice
 case "$choice" in
     1)
@@ -46,13 +45,13 @@ case "$choice" in
         echo ""
         read -p "请选择操作: " act
         case "$act" in
-        1) screen -ls | grep "$sess";;
-        2) screen -r "$sess";;
-        3)
-            screen -X -S "$sess" quit
-            echo -e "\033[42m[Success] 会话 ${sess} 已关闭！\033[0m"
-            ;;
-        *) echo -e "\033[41m[Error] 此操作不存在！\033[0m";;
+            1) screen -ls | grep "$sess";;
+            2) screen -r "$sess";;
+            3)
+                screen -X -S "$sess" quit
+                echo -e "\033[42m[Success] 会话 ${sess} 已关闭！\033[0m"
+                ;;
+            *) echo -e "\033[41m[Error] 此操作不存在！\033[0m";;
         esac
         ;;
     *) echo -e "\033[41m[Error] 当前选择不存在！\033[0m";;
