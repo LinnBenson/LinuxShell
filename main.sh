@@ -7,6 +7,7 @@ echo "1. Screen 会话管理"
 echo ""
 
 read -p "请选择需要执行的功能: " choice
+echo ""
 case "$choice" in
     1) bash <(curl -Ls https://raw.githubusercontent.com/LinnBenson/LinuxShell/main/screen.sh);;
     *) echo -e "\033[41m[Error] 当前选择不存在！\033[0m";;
